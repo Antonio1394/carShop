@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateModelosTable extends Migration
+class CreateInterioresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,9 @@ class CreateModelosTable extends Migration
      */
     public function up()
     {
-        Schema::create('modelos', function (Blueprint $table) {
+        Schema::create('interiores', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->integer('año');
-            $table->bigInteger('idMarca');
-            $table->foreign('idMarca')
-                  ->references('id')
-                  ->on('marcas');
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ class CreateModelosTable extends Migration
      */
     public function down()
     {
-        Schema::drop('modelos');
+        Schema::drop('interiores');
     }
 }

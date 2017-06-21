@@ -13,7 +13,7 @@ class CreateTransmisionesTable extends Migration
     public function up()
     {
         Schema::create('transmisiones', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->enum('nombre',['Automatico','Manual']);
             $table->timestamps();
         });

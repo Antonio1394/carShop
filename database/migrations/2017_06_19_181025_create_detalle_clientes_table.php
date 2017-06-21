@@ -27,7 +27,7 @@ class CreateDetalleClientesTable extends Migration
             $table->bigInteger('idMunicipio');
             $table->bigInteger('idDepartamento');
             $table->bigInteger('idPais');
-            $table->foreign('idMunicipio');
+            $table->foreign('idMunicipio')
                   ->references('id')
                   ->on('municipios');
             $table->foreign('idDepartamento')

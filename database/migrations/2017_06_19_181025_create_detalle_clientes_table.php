@@ -36,6 +36,11 @@ class CreateDetalleClientesTable extends Migration
             $table->foreign('idPais')
                   ->references('id')
                   ->on('paises');
+
+            $table->foreign('idCliente')
+                  ->references('id')
+                  ->on('clientes');
+
             $table->timestamps();
         });
     }

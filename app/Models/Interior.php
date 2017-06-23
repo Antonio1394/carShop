@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Interior extends Model
 {
-    protected $table='seguridad';
+    protected $table='interiores';
 
     protected $fillable=['nombre'];
 }

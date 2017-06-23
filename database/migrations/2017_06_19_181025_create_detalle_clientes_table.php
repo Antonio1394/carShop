@@ -18,7 +18,7 @@ class CreateDetalleClientesTable extends Migration
             $table->enum('estadoCivil',['Soltero','Casado','Unido','Divorciado','Viudo']);
             $table->date('fechaNac');
             $table->integer('noHijos');
-            $table->integer('ingesos');
+            $table->integer('ingresos');
             $table->string('industriaLaboral');
             $table->string('colorFav');
             $table->integer('noVehNuevos');//numero de Vehiculos comprados Nuevos

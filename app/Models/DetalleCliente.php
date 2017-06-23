@@ -12,7 +12,7 @@ class DetalleCliente extends Model
                          'estadoCivil',
                          'fechaNac',
                          'noHijos',
-                         'ingesos',
+                         'ingresos',
                          'industriaLaboral',
                          'colorFav',
                          'noVehNuevos',
@@ -20,6 +20,6 @@ class DetalleCliente extends Model
                          'CodPostal',
                          'idMunicipio',
                          'idDepartamento',
-                         'idPais',            
-                          ]
+                         'idPais',
+                       ];
 }

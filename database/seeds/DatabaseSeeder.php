@@ -15,6 +15,12 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         // $this->call(UserTableSeeder::class);
+         factory('App\Models\Cliente', 1000)->create();
+         $this->call(PaisTableSeeder::class);
+         $this->call(DepartamentoTableSeeder::class);
+         $this->call(MunicipioTableSeeder::class);
+         $this->call(DetalleClienteTableSeeder::class);
+
 
         Model::reguard();
     }

@@ -12,6 +12,6 @@ class Venta extends Model
                          'fecha',
                          'dispositivoCompra',
                          'explorador',
-                         'SO'
+                         'SO',
                        ];
 }

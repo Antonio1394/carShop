@@ -16,16 +16,14 @@ class CreateVehiculosTable extends Migration
             $table->bigIncrements('id');
             $table->string('NombreCOme');
             $table->bigInteger('idTipo');
-            $table->bigInteger('idMarca');
             $table->bigInteger('idModelo');
             $table->bigInteger('idMotor');
             $table->bigInteger('idTransmision');
             $table->bigInteger('idSeguirdad');
             $table->bigInteger('IdExteriores');
             $table->bigInteger('idInteriores');
-            $table->decimal('precio', 5, 2);
+            $table->bigInteger('precio');
             $table->foreign('idTipo')->references('id')->on('tiposVehiculo');
-            $table->foreign('idMarca')->references('id')->on('marcas');
             $table->foreign('idModelo')->references('id')->on('modelos');
             $table->foreign('idMotor')->references('id')->on('tiposMotor');
             $table->foreign('idTransmision')->references('id')->on('transmisiones');

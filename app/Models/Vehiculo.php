@@ -10,7 +10,6 @@ class Vehiculo extends Model
 
     protected $fillable=['NombreCOme',
                          'idTipo',
-                         'idMarca',
                          'idModelo',
                          'idMotor',
                          'idTransmision',

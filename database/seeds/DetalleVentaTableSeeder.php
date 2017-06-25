@@ -11,7 +11,7 @@ class DetalleVentaTableSeeder extends Seeder
      */
     public function run()
     {
-        for ($i=1; $i <500 ; $i++)
+        for ($i=1; $i <12349 ; $i++)
         {
 
               $venta= new DetalleVenta;

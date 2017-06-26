@@ -14,7 +14,7 @@ class VehiculoTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        for ($i=1; $i<=10000 ; $i++) {
+        for ($i=1; $i<=20000 ; $i++) {
             $veh= new Vehiculo;
             $veh->NombreCOme='veh'.$i;
             $veh->idTipo=$faker->numberBetween($min = 1, $max = 5);

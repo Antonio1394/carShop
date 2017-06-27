@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Cliente;
-use App\Models\DetalleCliene;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class ClienteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-      $cliente = Cliente::orderBy('id', 'desc')->get();
-      return view('admin.cliente.index',compact('cliente'));
+        return view('public.index');
     }
 
     /**
@@ -28,7 +26,7 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

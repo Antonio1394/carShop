@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Models\Cliente;
-use App\Models\DetalleCliene;
+use App\Models\Vehiculo;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class VehiculoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-      $cliente = Cliente::orderBy('id', 'desc')->get();
-      return view('admin.cliente.index',compact('cliente'));
+        $vehiculo=Vehiculo::chunk(200);
+        return view('admin.vehiculos.index',compact('vehiculo'));
     }
 
     /**

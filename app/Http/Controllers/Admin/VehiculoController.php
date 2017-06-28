@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Vehiculo;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+ini_set('max_execution_time', 180);
 
 class VehiculoController extends Controller
 {
@@ -16,7 +17,7 @@ class VehiculoController extends Controller
      */
     public function index()
     {
-        $vehiculo=Vehiculo::chunk(200);
+        $vehiculo=Vehiculo::orderBy('id','desc')->get();
         return view('admin.vehiculos.index',compact('vehiculo'));
     }
 

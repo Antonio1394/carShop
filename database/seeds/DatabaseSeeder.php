@@ -39,23 +39,6 @@ class DatabaseSeeder extends Seeder
          $this->call(VentasTableSeeder::class);
          $this->call(DetalleVentaTableSeeder::class);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         Model::reguard();
     }
 }

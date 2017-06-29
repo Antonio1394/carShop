@@ -38,7 +38,6 @@ class DatabaseSeeder extends Seeder
          $this->call(VehiculoTableSeeder::class);
          $this->call(VentasTableSeeder::class);
          $this->call(DetalleVentaTableSeeder::class);
-
         Model::reguard();
     }
 }

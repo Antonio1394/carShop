@@ -14,12 +14,13 @@ class DetalleClienteTableSeeder extends Seeder
 
         $faker = Faker\Factory::create();
 
-        for ($i = 1; $i <=1000; $i++)
+        for ($i = 1; $i <=7000; $i++)
         {
             $detalle = new DetalleCliente;
             $detalle->idCliente =$i;
             $detalle->estadoCivil =$faker->randomElement($array = array ('Soltero','Casado','Unido','Divorciado','Viudo'));
-            $detalle->fechaNac =$faker->date($format = 'Y-m-d', $max = 'now');
+            $detalle->fechaNac =$faker->dateTimeBetween($startDate = '-90 years', $endDate = '22 years', $timezone = date_default_timezone_get());
+
             $detalle->noHijos =$faker->numberBetween($min = 0, $max = 7);
             $detalle->ingresos =$faker->numberBetween($min = 2500, $max = 10000);
             $detalle->industriaLaboral =$faker->randomElement($array = array ('saludad','informática','comercio','educativo'));

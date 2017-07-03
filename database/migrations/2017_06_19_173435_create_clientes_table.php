@@ -17,7 +17,7 @@ class CreateClientesTable extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->string('direccion');
-            $table->string('NIT');
+            $table->string('NIT');///restirngir numero.
             $table->timestamps();
         });
     }

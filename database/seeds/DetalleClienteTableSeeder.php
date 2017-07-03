@@ -28,8 +28,8 @@ class DetalleClienteTableSeeder extends Seeder
             $detalle->noVehNuevos =$faker->numberBetween($min = 0, $max = 7);
             $detalle->noVehUsados =$faker->numberBetween($min = 0, $max = 7);
             $detalle->CodPostal=$faker->postcode;
-            $detalle->idMunicipio=$faker->numberBetween($min = 1, $max = 9);
-            $detalle->idDepartamento=15;
+            $detalle->idMunicipio=$faker->numberBetween($min = 1, $max = 12);
+            $detalle->idDepartamento=$faker->numberBetween($min = 1, $max = 3);
             $detalle->idPais=4;
             $detalle->save();
         }

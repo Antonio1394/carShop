@@ -13,6 +13,11 @@ class Cliente extends Model
                          'NIT'];
 
 
+
+
+
+
+
     public $relations=['detalleCliente'];
 
     public function detalleCliente()

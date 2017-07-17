@@ -15,9 +15,6 @@ class Cliente extends Model
 
 
 
-
-
-
     public $relations=['detalleCliente'];
 
     public function detalleCliente()

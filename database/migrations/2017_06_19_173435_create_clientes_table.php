@@ -20,8 +20,6 @@ class CreateClientesTable extends Migration
             $table->string('NIT');///restirngir numero
 
 
-
-            
             $table->timestamps();
 
         });

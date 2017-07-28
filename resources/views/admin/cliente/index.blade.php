@@ -24,6 +24,8 @@
                                     <th>Apellido</th>
                                     <th>Dirección</th>
                                     <th>NIT</th>
+
+                                    
                                 </tr>
                             </thead>
                             <tbody>
